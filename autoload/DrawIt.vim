@@ -127,20 +127,20 @@ fun! DrawIt#DrawItStart(...)
   let b:di_gfxchr= 1
   if &enc == 'utf-8' || &enc == 'utf-16' || &enc == "ucs-4"
    " Box drawing characters using unicode
-   " │ ─ ┌ ┐ └ ┘ ┬ ┴ ├ ┤ ┼ ╱ ╲ ╳
+   " │ ─ ╭ ╮ ╰ ╯ ┬ ┴ ├ ┤ ┼ ╱ ╲ ╳
    " ║ ═ ╔ ╗ ╚ ╝ ╦ ╩ ╠ ╣ ╬      
 "   call Decho("box drawing characters using unicode")
    if !exists("b:di_Svert")   |let b:di_Svert   = '│' |endif
    if !exists("b:di_Dvert")   |let b:di_Dvert   = '║' |endif
    if !exists("b:di_Shoriz")  |let b:di_Shoriz  = '─' |endif
    if !exists("b:di_Dhoriz")  |let b:di_Dhoriz  = '═' |endif
-   if !exists("b:di_Sulcorn") |let b:di_Sulcorn = '┌' |endif
+   if !exists("b:di_Sulcorn") |let b:di_Sulcorn = '╭' |endif
    if !exists("b:di_Dulcorn") |let b:di_Dulcorn = '╔' |endif
-   if !exists("b:di_Surcorn") |let b:di_Surcorn = '┐' |endif
+   if !exists("b:di_Surcorn") |let b:di_Surcorn = '╮' |endif
    if !exists("b:di_Durcorn") |let b:di_Durcorn = '╗' |endif
-   if !exists("b:di_Sllcorn") |let b:di_Sllcorn = '└' |endif
+   if !exists("b:di_Sllcorn") |let b:di_Sllcorn = '╰' |endif
    if !exists("b:di_Dllcorn") |let b:di_Dllcorn = '╚' |endif
-   if !exists("b:di_Slrcorn") |let b:di_Slrcorn = '┘' |endif
+   if !exists("b:di_Slrcorn") |let b:di_Slrcorn = '╯' |endif
    if !exists("b:di_Dlrcorn") |let b:di_Dlrcorn = '╝' |endif
    if !exists("b:di_Splus")   |let b:di_Splus   = '┼' |endif
    if !exists("b:di_Dplus")   |let b:di_Dplus   = '╬' |endif
